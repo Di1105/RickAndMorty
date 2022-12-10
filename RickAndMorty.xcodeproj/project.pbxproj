@@ -13,6 +13,9 @@
 		C6ABC8232943CED600F6A9FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6ABC8212943CED600F6A9FE /* Main.storyboard */; };
 		C6ABC8252943CEDB00F6A9FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6ABC8242943CEDB00F6A9FE /* Assets.xcassets */; };
 		C6ABC8282943CEDB00F6A9FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6ABC8262943CEDB00F6A9FE /* LaunchScreen.storyboard */; };
+		C6ABC8322943D43000F6A9FE /* RickMortyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6ABC8312943D43000F6A9FE /* RickMortyCell.swift */; };
+		C6ABC8382943DB8600F6A9FE /* RickMortyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6ABC8372943DB8600F6A9FE /* RickMortyModel.swift */; };
+		C6ABC83B2943E94200F6A9FE /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6ABC83A2943E94200F6A9FE /* WebService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		C6ABC8242943CEDB00F6A9FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C6ABC8272943CEDB00F6A9FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C6ABC8292943CEDB00F6A9FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6ABC8312943D43000F6A9FE /* RickMortyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickMortyCell.swift; sourceTree = "<group>"; };
+		C6ABC8372943DB8600F6A9FE /* RickMortyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickMortyModel.swift; sourceTree = "<group>"; };
+		C6ABC83A2943E94200F6A9FE /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,50 @@
 		C6ABC81A2943CED600F6A9FE /* RickAndMorty */ = {
 			isa = PBXGroup;
 			children = (
-				C6ABC81B2943CED600F6A9FE /* AppDelegate.swift */,
-				C6ABC81D2943CED600F6A9FE /* SceneDelegate.swift */,
-				C6ABC81F2943CED600F6A9FE /* ViewController.swift */,
+				C6ABC8362943DB0500F6A9FE /* Service */,
+				C6ABC8352943DAFA00F6A9FE /* ViewModel */,
+				C6ABC8342943DAF300F6A9FE /* Model */,
+				C6ABC8332943DAED00F6A9FE /* View */,
 				C6ABC8212943CED600F6A9FE /* Main.storyboard */,
 				C6ABC8242943CEDB00F6A9FE /* Assets.xcassets */,
 				C6ABC8262943CEDB00F6A9FE /* LaunchScreen.storyboard */,
 				C6ABC8292943CEDB00F6A9FE /* Info.plist */,
 			);
 			path = RickAndMorty;
+			sourceTree = "<group>";
+		};
+		C6ABC8332943DAED00F6A9FE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C6ABC81B2943CED600F6A9FE /* AppDelegate.swift */,
+				C6ABC81D2943CED600F6A9FE /* SceneDelegate.swift */,
+				C6ABC81F2943CED600F6A9FE /* ViewController.swift */,
+				C6ABC8312943D43000F6A9FE /* RickMortyCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C6ABC8342943DAF300F6A9FE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C6ABC8372943DB8600F6A9FE /* RickMortyModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C6ABC8352943DAFA00F6A9FE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C6ABC8362943DB0500F6A9FE /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				C6ABC83A2943E94200F6A9FE /* WebService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +179,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6ABC8382943DB8600F6A9FE /* RickMortyModel.swift in Sources */,
 				C6ABC8202943CED600F6A9FE /* ViewController.swift in Sources */,
+				C6ABC8322943D43000F6A9FE /* RickMortyCell.swift in Sources */,
 				C6ABC81C2943CED600F6A9FE /* AppDelegate.swift in Sources */,
+				C6ABC83B2943E94200F6A9FE /* WebService.swift in Sources */,
 				C6ABC81E2943CED600F6A9FE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
