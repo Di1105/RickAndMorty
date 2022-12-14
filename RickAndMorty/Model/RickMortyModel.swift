@@ -6,18 +6,21 @@
 //
 
 import Foundation
-
-struct SpeciesRM: Decodable {
-    var id : Int
-    var name : String
-    var species : String
-    var origin : OriginName
-    var location : RMImage
-}
-struct OriginName: Decodable {
-    var name : String
+// MARK: - RickMorty
+struct RickMorty : Decodable{
+    let results: [Result]
 }
 
-struct RMImage: Decodable {
-    var image : Data
+// MARK: - Result
+struct Result: Decodable {
+    let id: Int
+    let name: String
+    let species: String
+    let origin, location: Location
+    let image: String
+}
+
+// MARK: - Location
+struct Location: Decodable {
+    let name: String
 }

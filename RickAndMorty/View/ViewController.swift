@@ -18,9 +18,7 @@ class ViewController: UIViewController , UITableViewDelegate,UITableViewDataSour
         
         let url = URL(string: "https://rickandmortyapi.com/api/character")!
         WebService().downloadInformations(url: url) { rmList in
-            if let rmList = rmList {
-                print(rmList)
-            }
+            
         }
     }
 
