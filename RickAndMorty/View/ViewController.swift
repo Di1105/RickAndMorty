@@ -15,11 +15,13 @@ class ViewController: UIViewController , UITableViewDelegate,UITableViewDataSour
         super.viewDidLoad()
         tableView.dataSource = self
         tableView.delegate = self
+        getData()
     }
     
     func getData(){
         WebService().downloadInformations { rmList in
             if let rmList = rmList{
+                print(rmList)
                 self.rickMortyListVM = RickMortyListVM(rickMortyListVM: rmList)
             }
             DispatchQueue.main.async {
