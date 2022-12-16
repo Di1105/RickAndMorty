@@ -29,9 +29,10 @@ struct RickMortyVM {
     var name : String {
         return self.rickMortyVM.name
     }
-    /*var image : String {
+
+    var image : String {
         return self.rickMortyVM.image
-    }*/
+    }
     
     
 }

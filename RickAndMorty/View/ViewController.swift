@@ -38,7 +38,7 @@ class ViewController: UIViewController , UITableViewDelegate,UITableViewDataSour
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! RickMortyCell
         let rickMortyVM = rickMortyListVM.rickMortyatIndex(indexPath.row)
         cell.nameLabel.text = rickMortyVM.name
-        //cell.rmImageView.image = rickMortyVM.image
+        print(rickMortyVM.image)
         return cell
     }
 
