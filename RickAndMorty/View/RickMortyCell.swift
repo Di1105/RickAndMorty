@@ -8,8 +8,8 @@
 import UIKit
 
 class RickMortyCell: UITableViewCell {
-    @IBOutlet weak var RickMortyView: UIView!
-    @IBOutlet weak var RMImageView: UIImageView!
+    @IBOutlet weak var rickMortyView: UIView!
+    @IBOutlet weak var rmImageView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
     
     override func awakeFromNib() {

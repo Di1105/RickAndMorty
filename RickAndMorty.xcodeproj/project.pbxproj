@@ -16,7 +16,7 @@
 		C6ABC8322943D43000F6A9FE /* RickMortyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6ABC8312943D43000F6A9FE /* RickMortyCell.swift */; };
 		C6ABC8382943DB8600F6A9FE /* RickMortyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6ABC8372943DB8600F6A9FE /* RickMortyModel.swift */; };
 		C6ABC83B2943E94200F6A9FE /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6ABC83A2943E94200F6A9FE /* WebService.swift */; };
-		C6ABC83D294A0F3900F6A9FE /* RMViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6ABC83C294A0F3900F6A9FE /* RMViewModel.swift */; };
+		C6ABC83D294A0F3900F6A9FE /* RickMortyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6ABC83C294A0F3900F6A9FE /* RickMortyViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,7 +31,7 @@
 		C6ABC8312943D43000F6A9FE /* RickMortyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickMortyCell.swift; sourceTree = "<group>"; };
 		C6ABC8372943DB8600F6A9FE /* RickMortyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickMortyModel.swift; sourceTree = "<group>"; };
 		C6ABC83A2943E94200F6A9FE /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
-		C6ABC83C294A0F3900F6A9FE /* RMViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMViewModel.swift; sourceTree = "<group>"; };
+		C6ABC83C294A0F3900F6A9FE /* RickMortyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickMortyViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +98,7 @@
 		C6ABC8352943DAFA00F6A9FE /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				C6ABC83C294A0F3900F6A9FE /* RMViewModel.swift */,
+				C6ABC83C294A0F3900F6A9FE /* RickMortyViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -187,7 +187,7 @@
 				C6ABC8322943D43000F6A9FE /* RickMortyCell.swift in Sources */,
 				C6ABC81C2943CED600F6A9FE /* AppDelegate.swift in Sources */,
 				C6ABC83B2943E94200F6A9FE /* WebService.swift in Sources */,
-				C6ABC83D294A0F3900F6A9FE /* RMViewModel.swift in Sources */,
+				C6ABC83D294A0F3900F6A9FE /* RickMortyViewModel.swift in Sources */,
 				C6ABC81E2943CED600F6A9FE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

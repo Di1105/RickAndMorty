@@ -9,7 +9,9 @@ import Foundation
 
 class WebService {
     
-    func downloadInformations(url: URL, completion: @escaping (RickMorty)->Void){
+    func downloadInformations(completion: @escaping ((RickMorty)?)->Void){
+        
+        let url = URL(string: "https://rickandmortyapi.com/api/character")!
         URLSession.shared.dataTask(with: url) { data, response, error in
             
             if let error = error {
@@ -17,11 +19,15 @@ class WebService {
                 
             }else if let data = data {
                 
-                    let rickMortyInfo = try? JSONDecoder().decode(RickMorty.self, from: data)
-                print(rickMortyInfo?.results ?? "default")
-                    if let rickMortyInfo = rickMortyInfo {
-                        completion(rickMortyInfo)
-                        
+                let rickMortyInfo = try? JSONDecoder().decode(RickMorty.self, from: data)
+                //print(rickMortyInfo)
+                print("success")
+
+                if let rickMortyInfo = rickMortyInfo {
+                        DispatchQueue.main.async {
+                            completion(rickMortyInfo)
+                        }
+                
                 }
             }
         }.resume()

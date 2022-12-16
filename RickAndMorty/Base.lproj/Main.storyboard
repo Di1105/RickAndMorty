@@ -63,9 +63,9 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="RMImageView" destination="YiQ-Am-LIx" id="9rZ-pV-0aD"/>
-                                            <outlet property="RickMortyView" destination="DPJ-f6-f9J" id="G05-KB-FI0"/>
                                             <outlet property="nameLabel" destination="eCZ-56-c9M" id="WN4-ut-lNb"/>
+                                            <outlet property="rMImageView" destination="YiQ-Am-LIx" id="9rZ-pV-0aD"/>
+                                            <outlet property="rickMortyView" destination="DPJ-f6-f9J" id="G05-KB-FI0"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

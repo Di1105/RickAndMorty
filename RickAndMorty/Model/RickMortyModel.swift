@@ -8,11 +8,11 @@
 import Foundation
 // MARK: - RickMorty
 struct RickMorty : Decodable{
-    let results: [Result]
+    let results: [ResultsRM]
 }
 
 // MARK: - Result
-struct Result: Decodable {
+struct ResultsRM: Decodable {
     let id: Int
     let name: String
     let species: String
