@@ -70,7 +70,7 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rm" translatesAutoresizingMaskIntoConstraints="NO" id="i95-Qw-wEo">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rmm" translatesAutoresizingMaskIntoConstraints="NO" id="i95-Qw-wEo">
                                 <rect key="frame" x="0.0" y="47" width="390" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="WTT-Cl-6no"/>
@@ -100,7 +100,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="rm" width="500" height="280"/>
+        <image name="rmm" width="3840" height="2160"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

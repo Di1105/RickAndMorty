@@ -14,7 +14,7 @@ class ViewController: UIViewController , UITableViewDelegate,UITableViewDataSour
     private var rickMortyListVM : RickMortyListVM!
     override func viewDidLoad() {
         super.viewDidLoad()
-        logoImage.image = UIImage(named: "rm")
+        logoImage.image = UIImage(named: "rmm")
         tableView.rowHeight = 100
         tableView.dataSource = self
         tableView.delegate = self
