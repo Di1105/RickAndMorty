@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 class WebService {
     
@@ -32,5 +33,24 @@ class WebService {
             }
         }.resume()
     }
+    
+    func downloadImage(url: String, completion: @escaping ((UIImage)?)->Void){
+
+            let url = URL(string: url)!
+            URLSession.shared.dataTask(with: url) { data, response, error in
+
+                if let error = error {
+                    print(error.localizedDescription)
+
+                }else if let data = data {
+
+                    let image = UIImage(data: data)
+
+                    DispatchQueue.main.async {
+                        completion(image)
+                    }
+                }
+            }.resume()
+        }
 }
 
